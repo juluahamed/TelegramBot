@@ -42,7 +42,7 @@ def serverDown(request):
     """
     if request.method == "POST":
         if request.body.decode("utf-8") == "x7h2l09chtD2O518sgt":
-            message = "IMPORTANT! The server is Down"
+            message = "IMPORTANT! The server is down"
             send(message)
             return HttpResponse('OK')
         else:

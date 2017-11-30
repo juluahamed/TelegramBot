@@ -1,5 +1,5 @@
 import paramiko
-def run(host='35.154.100.41', port=2200, user='grader',
+def run(host='13.127.47.153', port=2200, user='grader',
                   command="mpstat | grep 'all'", bufsize=-1, key_filename='/home/ubuntu/grader_key',
                   timeout=120, pkey=None):
     """

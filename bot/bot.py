@@ -107,7 +107,7 @@ def handle_update(update):
         elif text == '/start':
             new_tr =Transaction(status='S',chat_id=chat, text=text, response="Welcome! Lets get to work", tr_type='D')
             new_tr.save()
-            send_message("Welcome! Lets get to work", chat, None)
+            send_message("Welcome! Lets get to work", chat, custom_keyboard())
 
         # Unrecognised message and Run user commands
         else:
