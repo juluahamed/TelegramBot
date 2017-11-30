@@ -32,10 +32,3 @@ def run(host='35.154.100.41', port=2200, user='grader',
     except:
         status = 1
     return temp_text, status
-
-if __name__ == '__main__':
-    text,status = run()
-    text = str(text,'utf-8')
-    print(text.strip().split())
-    cpu = text.strip().split()
-    print(text)
